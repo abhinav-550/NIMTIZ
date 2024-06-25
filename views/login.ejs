@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIMITZ | Login</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="/login" method="POST">
+      <h2>Login</h2>
+        <div class="input-field">
+        <input type="text" name="Email" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" name="Password" required>
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <div class="invalidAuth"> <%= invalidAuth  %></div>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>Don't have an account? <a href="/register">Register</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

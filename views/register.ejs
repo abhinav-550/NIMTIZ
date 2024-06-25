@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NIMITZ | Register</title>
+    <link rel="stylesheet" href="./css/register.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+  </head>
+  <body>
+    <section class="container">
+      <header>Register To Our Website</header>
+      <form action="/register" class="form" method="POST">
+        <div class="input-box">
+          <label>Name*</label>
+          <input type="text" placeholder="Enter full name" name="Name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address*</label>
+          <input type="text" name="Email" placeholder="Enter Email address" required />
+        </div>
+        <div class="input-box">
+          <label>Password*</label>
+          <input type="password" name="Password" placeholder="Password" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number*</label>
+            <input type="number" name="phoneNumber" placeholder="Enter phone number" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" name="birthDate" placeholder="Enter birth date"  />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender*</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="Gender" value="Male" />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="Gender" value="Female" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="Gender" value="Prefer Not Say" />
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address*</label>
+          <input type="text" name="streetAddress" placeholder="Enter street address" required />
+          <input type="text" name="Landmark" placeholder="Landmark"  />
+          <div class="column">
+            <div class="select-box">
+              <select name="Country">
+                <option hidden>Country</option>
+                <option value="India">India</option>
+              </select>
+            </div>
+            <input type="text" name="City" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input type="number" name="secondaryPhoneNumber" placeholder="Secondary Phone Number" />
+            <input type="number" name="postalCode" placeholder="Enter postal code" required />
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+      <div class="redirects">
+        <a href="/login" id="loginRedirectBtn">Already Signed In</a>      
+        <a href="/home"  id="homeRedirectBtn">Back To Home</a>
+      </div>
+    </section>
+  </body>
+</html>
